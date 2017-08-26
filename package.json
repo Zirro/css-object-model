@@ -1,0 +1,27 @@
+{
+  "name": "css-object-model",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "css-tree": "^1.0.0-alpha19",
+    "domexception": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "fs-extra": "^4.0.1",
+    "jsdom": "^11.2.0",
+    "mdn-data": "^1.0.0",
+    "rimraf": "^2.6.1",
+    "webidl2js": "^7.3.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run convert-idl && git submodule update --init --recursive && cd ./test/jsdom && npm install && npm run convert-idl",
+    "postinstall": "npm run convert-idl",
+    "test-wpt": "cd ./test/jsdom && node ./node_modules/.bin/_mocha ./test/web-platform-tests/index.js",
+    "test-tuwpt": "cd ./test/jsdom && node ./node_modules/.bin/_mocha ./test/web-platform-tests/to-upstream.js",
+    "convert-idl": "node ./scripts/webidl/convert.js",
+    "update-idl": "node ./scripts/webidl/update.js"
+  }
+}

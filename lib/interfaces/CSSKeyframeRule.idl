@@ -1,0 +1,4 @@
+interface CSSKeyframeRule : CSSRule {
+  attribute CSSOMString keyText;
+  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+};
