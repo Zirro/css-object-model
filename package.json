@@ -1,6 +1,6 @@
 {
   "name": "css-object-model",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An implementation of the CSSOM specification",
   "license": "MIT",
   "repository": "Zirro/css-object-model",
