@@ -18,10 +18,8 @@
     "webidl2js": "^7.3.0"
   },
   "scripts": {
-    "prepare": "npm run convert-idl",
+    "prepare": "yarn run convert-idl",
     "lint": "eslint .",
-    "test-wpt": "cd ./test/jsdom && node ./node_modules/.bin/_mocha ./test/web-platform-tests/index.js",
-    "test-tuwpt": "cd ./test/jsdom && node ./node_modules/.bin/_mocha ./test/web-platform-tests/to-upstream.js",
     "convert-idl": "node ./scripts/webidl/convert.js",
     "update-idl": "node ./scripts/webidl/update.js"
   }
