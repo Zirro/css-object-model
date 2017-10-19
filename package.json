@@ -6,19 +6,19 @@
   "repository": "Zirro/css-object-model",
   "main": "lib/index.js",
   "dependencies": {
-    "css-tree": "^1.0.0-alpha19",
+    "css-tree": "^1.0.0-alpha24",
     "domexception": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.5.0",
-    "fs-extra": "^4.0.1",
-    "jsdom": "^11.2.0",
+    "eslint": "^4.8.0",
+    "fs-extra": "^4.0.2",
+    "jsdom": "^11.3.0",
     "mdn-data": "^1.0.0",
-    "rimraf": "^2.6.1",
-    "webidl2js": "^7.3.0"
+    "rimraf": "^2.6.2",
+    "webidl2js": "^8.0.0"
   },
   "scripts": {
-    "prepare": "yarn run convert-idl",
+    "prepare": "yarn convert-idl",
     "lint": "eslint .",
     "convert-idl": "node ./scripts/webidl/convert.js",
     "update-idl": "node ./scripts/webidl/update.js"

@@ -32,7 +32,7 @@ rules:
   consistent-this: [2, that]
   constructor-super: 2
   curly: [2, multi-line, consistent]
-  default-case: 2
+  default-case: 0
   dot-location: [2, property]
   dot-notation: [2, { allowKeywords: true }]
   eol-last: 2
@@ -49,7 +49,7 @@ rules:
   id-blacklist: 0
   id-length: 0
   id-match: 2
-  indent: [2, 2, { SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 } }]
+  indent: [2, 2, { MemberExpression: off, SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 } }]
   init-declarations: 0
   jsx-quotes: 0
   key-spacing: 0
@@ -59,7 +59,7 @@ rules:
   lines-around-comment: 0
   lines-around-directive: 2
   max-depth: 0
-  max-len: 0
+  max-len: 2
   max-lines: 0
   max-nested-callbacks: 0
   max-params: 0
@@ -74,7 +74,7 @@ rules:
   no-alert: 0
   no-array-constructor: 2
   no-await-in-loop: 2
-  no-bitwise: 2
+  no-bitwise: 0
   no-buffer-constructor: 2
   no-caller: 2
   no-case-declarations: 2
@@ -110,7 +110,7 @@ rules:
   no-extra-label: 2
   no-extra-parens: [2, all, { nestedBinaryExpressions: false }]
   no-extra-semi: 2
-  no-fallthrough: 2
+  no-fallthrough: 0
   no-floating-decimal: 2
   no-func-assign: 2
   no-global-assign: 2
@@ -225,7 +225,7 @@ rules:
   prefer-reflect: 0
   prefer-rest-params: 2
   prefer-spread: 0
-  prefer-template: 2
+  prefer-template: 0
   quote-props: [2, consistent-as-needed]
   quotes: 2
   radix: 2
