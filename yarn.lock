@@ -246,10 +246,11 @@ cryptiles@3.x.x:
   dependencies:
     boom "5.x.x"
 
-css-tree@^1.0.0-alpha24:
-  version "1.0.0-alpha9"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha9.tgz#6ee3e397b569eef32419286c86e3e8b65fcaf3e3"
+css-tree@1.0.0-alpha24:
+  version "1.0.0-alpha24"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha24.tgz#869911837755e8b81c48efb4359a7f88521127fe"
   dependencies:
+    mdn-data "^1.0.0"
     source-map "^0.5.3"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":

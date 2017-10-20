@@ -6,7 +6,7 @@
   "repository": "Zirro/css-object-model",
   "main": "lib/index.js",
   "dependencies": {
-    "css-tree": "^1.0.0-alpha24",
+    "css-tree": "1.0.0-alpha24",
     "domexception": "^1.0.0"
   },
   "devDependencies": {
